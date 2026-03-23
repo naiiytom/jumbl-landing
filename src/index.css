@@ -4,10 +4,19 @@
   --color-jumbl-alabaster: #F5F0E8;
   --color-jumbl-charcoal: #2C2C2C;
   --color-jumbl-gold: #B8A080;
+  --color-jumbl-divider: #E8E2D8;
+
+  /* Status Colors */
+  --color-status-pile: #5B8DEF;
+  --color-status-reading: #E8A849;
+  --color-status-finished: #4ECDC4;
+  --color-status-abandoned: #9E9E9E;
   
   --font-playfair: 'Playfair Display', serif;
   --font-inter: 'Inter', sans-serif;
   --font-mitr: 'Mitr', sans-serif;
+  --font-sarabun: 'Sarabun', sans-serif;
+  --font-jetbrains: 'JetBrains Mono', monospace;
 }
 
 body {
@@ -16,4 +25,17 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   @apply font-playfair;
+}
+
+.glass-nav {
+  @apply fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-32px)] max-w-5xl;
+  @apply bg-white/70 backdrop-blur-xl border border-white/40 rounded-2xl shadow-lg;
+}
+
+.jumbl-card {
+  @apply bg-white border border-jumbl-divider rounded-2xl shadow-sm transition-all duration-300;
+}
+
+.jumbl-card:hover {
+  @apply shadow-md border-jumbl-gold/30;
 }
