@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-piled-alabaster: #F5F0E8;
-  --color-piled-charcoal: #2C2C2C;
-  --color-piled-gold: #B8A080;
+  --color-jumbl-alabaster: #F5F0E8;
+  --color-jumbl-charcoal: #2C2C2C;
+  --color-jumbl-gold: #B8A080;
   
   --font-playfair: 'Playfair Display', serif;
   --font-inter: 'Inter', sans-serif;
@@ -11,7 +11,7 @@
 }
 
 body {
-  @apply bg-piled-alabaster text-piled-charcoal font-inter antialiased;
+  @apply bg-jumbl-alabaster text-jumbl-charcoal font-inter antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {

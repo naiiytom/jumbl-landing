@@ -10,8 +10,8 @@ function Layout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen flex flex-col">
       <header className="bg-white/80 backdrop-blur-md border-b shadow-sm sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold font-playfair text-piled-charcoal">
-            Piled
+          <Link to="/" className="text-2xl font-bold font-playfair text-jumbl-charcoal">
+            Jumbl
           </Link>
           <nav className="flex gap-6 items-center">
           </nav>
@@ -20,7 +20,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       <main className="flex-1">
         {children}
       </main>
-      <footer className="bg-piled-charcoal text-white py-8">
+      <footer className="bg-jumbl-charcoal text-white py-8">
         <div className="max-w-6xl mx-auto px-4 flex flex-col items-center">
           <div className="flex gap-6 mb-6">
             <Link to="/terms" className="text-sm text-gray-400 hover:text-white transition-colors">Terms</Link>
@@ -28,7 +28,7 @@ function Layout({ children }: { children: React.ReactNode }) {
             <Link to="/data-protection" className="text-sm text-gray-400 hover:text-white transition-colors">Data Protection</Link>
             <Link to="/cookies" className="text-sm text-gray-400 hover:text-white transition-colors">Cookies</Link>
           </div>
-          <p className="text-sm text-gray-400">© 2026 Piled. All rights reserved.</p>
+          <p className="text-sm text-gray-400">© 2026 Jumbl. All rights reserved.</p>
         </div>
       </footer>
     </div>
