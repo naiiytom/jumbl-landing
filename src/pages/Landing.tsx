@@ -16,65 +16,86 @@ export default function Landing() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex(prev => (prev + 1) % SCREENSHOTS.length);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-24 px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <div className="flex-1 text-center md:text-left">
-          <h1 className="text-5xl md:text-7xl font-playfair font-bold text-jumbl-charcoal mb-6 leading-tight">
-            Read beautifully, <br/>
-            Unpile elegantly.
+      <section className="py-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+        <div className="flex-1 text-left">
+          <h1 className="text-6xl md:text-8xl font-playfair font-bold text-jumbl-charcoal mb-8 leading-[1.1] tracking-tight">
+            Read without <br/>
+            distraction.
           </h1>
-          <p className="text-lg text-gray-600 mb-8 max-w-xl mx-auto md:mx-0">
-            Jumbl is the distraction-free book tracker designed for avid readers. 
-            Keep your reading sessions focused, your history visual, and your quotes organized.
+          <p className="text-xl text-gray-600 mb-10 max-w-xl font-inter leading-relaxed">
+            Jumbl is an alabaster sanctuary for your library. We stripped away the social noise to focus on what matters: your reading, your sessions, and your gathered wisdom.
           </p>
-          <div className="flex gap-4 justify-center md:justify-start">
-            <button className="bg-jumbl-gold text-white px-8 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all shadow-md">
-              Download App
+          <div className="flex flex-wrap gap-4">
+            <button className="bg-jumbl-gold text-white px-8 py-4 rounded-2xl font-semibold hover:scale-[1.02] transition-all shadow-xl shadow-jumbl-gold/20">
+              Download for iOS
             </button>
-            <Link to="/terms" className="px-8 py-3 rounded-full font-medium border border-jumbl-charcoal text-jumbl-charcoal hover:bg-black/5 transition-all">
-              Learn More
+            <button className="bg-jumbl-charcoal text-white px-8 py-4 rounded-2xl font-semibold hover:scale-[1.02] transition-all shadow-xl shadow-jumbl-charcoal/20">
+              Download for Android
+            </button>
+            <Link to="/#features" className="px-8 py-4 rounded-2xl font-semibold border-2 border-jumbl-charcoal/10 text-jumbl-charcoal hover:bg-jumbl-charcoal/5 transition-all">
+              View Features
             </Link>
           </div>
         </div>
         
-        {/* App Mockup image */}
-        <div className="flex-1 w-full max-w-md aspect-[9/16] bg-black rounded-[2.5rem] shadow-2xl border-8 border-white relative overflow-hidden group">
-          {SCREENSHOTS.map((src, index) => (
-            <img 
-              key={src}
-              src={src} 
-              alt={`Jumbl Mobile App UI mockup ${index + 1}`} 
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
-            />
-          ))}
+        {/* App Showcase */}
+        <div className="flex-1 relative w-full group">
+          <div className="absolute -inset-8 bg-gradient-to-tr from-jumbl-gold/20 to-transparent blur-3xl opacity-50 rounded-full" />
+          <div className="relative mx-auto w-full max-w-[420px] aspect-[9/19.5] bg-jumbl-charcoal rounded-[3rem] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.3)] border-[12px] border-jumbl-charcoal overflow-hidden transform lg:rotate-2">
+            {SCREENSHOTS.map((src, index) => (
+              <img 
+                key={src}
+                src={src} 
+                alt={`Jumbl UI Mockup ${index + 1}`} 
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
+              />
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Features */}
-      <section className="bg-white py-24">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-12">
-          <div className="text-center p-6">
-            <div className="w-16 h-16 bg-jumbl-alabaster rounded-full flex items-center justify-center mx-auto mb-6 text-jumbl-gold text-2xl">⚡</div>
-            <h3 className="text-xl font-bold font-playfair mb-3">Persistent Sessions</h3>
-            <p className="text-gray-600 text-sm">Real-time progress across screens with our Focus Mode and Tracker Card.</p>
-          </div>
-          <div className="text-center p-6">
-            <div className="w-16 h-16 bg-jumbl-alabaster rounded-full flex items-center justify-center mx-auto mb-6 text-jumbl-gold text-2xl">🔥</div>
-            <h3 className="text-xl font-bold font-playfair mb-3">Smart Streaks</h3>
-            <p className="text-gray-600 text-sm">Timezone-aware scheduling and streak reminders to keep your reading consistent.</p>
-          </div>
-          <div className="text-center p-6">
-            <div className="w-16 h-16 bg-jumbl-alabaster rounded-full flex items-center justify-center mx-auto mb-6 text-jumbl-gold text-2xl">🎨</div>
-            <h3 className="text-xl font-bold font-playfair mb-3">Premium Design</h3>
-            <p className="text-gray-600 text-sm">Alabaster, charcoal, and muted-gold interface built for visual excellence.</p>
+      {/* Features Detail */}
+      <section id="features" className="bg-white py-32 mt-12 border-t border-jumbl-divider">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-3 gap-16">
+            <div className="space-y-6">
+              <div className="w-12 h-12 bg-jumbl-alabaster rounded-xl flex items-center justify-center text-jumbl-gold font-jetbrains text-xl">01</div>
+              <h3 className="text-3xl font-bold font-playfair text-jumbl-charcoal">Deep Sessions</h3>
+              <p className="text-gray-500 leading-relaxed">
+                Persistent timers that live with you. Start reading on your tracker, lock your screen, and return to find your progress exactly where you left it. Focus is the priority.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <div className="w-12 h-12 bg-jumbl-alabaster rounded-xl flex items-center justify-center text-jumbl-gold font-jetbrains text-xl">02</div>
+              <h3 className="text-3xl font-bold font-playfair text-jumbl-charcoal">Visual History</h3>
+              <p className="text-gray-500 leading-relaxed">
+                A gold-gradient heatmap records your commitment. No streaks for the sake of streaks—just a truthful visual archive of your daily reading habits.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <div className="w-12 h-12 bg-jumbl-alabaster rounded-xl flex items-center justify-center text-jumbl-gold font-jetbrains text-xl">03</div>
+              <h3 className="text-3xl font-bold font-playfair text-jumbl-charcoal">Quote Catcher</h3>
+              <p className="text-gray-500 leading-relaxed">
+                Beautifully formatted cards for the insights you can't afford to forget. Organize your gathered wisdom by book, ready for reflection or export.
+              </p>
+            </div>
           </div>
         </div>
+      </section>
+
+      {/* Philosophy Section */}
+      <section id="philosophy" className="py-32 px-6 max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-playfair font-bold text-jumbl-charcoal mb-8">Reading isn't a social sport.</h2>
+        <p className="text-xl text-gray-500 italic font-inter leading-relaxed">
+          "The best tracker is the one that disappears. We built Jumbl to help you organize your library, not to steal your attention with feeds, ads, or gamification."
+        </p>
       </section>
     </div>
   );

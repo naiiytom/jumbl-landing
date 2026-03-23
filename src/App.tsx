@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { useEffect } from 'react'
+import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom'
 import Landing from './pages/Landing'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
@@ -7,20 +8,22 @@ import Cookies from './pages/Cookies'
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col">
-      <header className="bg-white/80 backdrop-blur-md border-b shadow-sm sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold font-playfair text-jumbl-charcoal">
+    <div className="min-h-screen flex flex-col bg-jumbl-alabaster">
+      <header className="glass-nav">
+        <div className="mx-auto px-6 h-16 flex justify-between items-center">
+          <Link to="/" className="text-2xl font-bold font-playfair text-jumbl-charcoal tracking-tight">
             Jumbl
           </Link>
-          <nav className="flex gap-6 items-center">
+          <nav className="flex gap-8 items-center">
+            <Link to="/#features" className="text-sm font-medium text-jumbl-charcoal/70 hover:text-jumbl-gold transition-colors">Features</Link>
+            <Link to="/#philosophy" className="text-sm font-medium text-jumbl-charcoal/70 hover:text-jumbl-gold transition-colors">Philosophy</Link>
           </nav>
         </div>
       </header>
-      <main className="flex-1">
+      <main className="flex-1 pt-28">
         {children}
       </main>
-      <footer className="bg-jumbl-charcoal text-white py-8">
+      <footer id="legal" className="bg-jumbl-charcoal text-white py-8">
         <div className="max-w-6xl mx-auto px-4 flex flex-col items-center">
           <div className="flex gap-6 mb-6">
             <Link to="/terms" className="text-sm text-gray-400 hover:text-white transition-colors">Terms</Link>
@@ -37,9 +40,31 @@ function Layout({ children }: { children: React.ReactNode }) {
 
 
 
+function ScrollToHash() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const id = hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        // Delay slightly to ensure content is rendered
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [hash]);
+
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToHash />
       <Layout>
         <Routes>
           <Route path="/" element={<Landing />} />
