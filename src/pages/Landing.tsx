@@ -33,13 +33,20 @@ export default function Landing() {
             Jumbl is an alabaster sanctuary for your library. We stripped away the social noise to focus on what matters: your reading, your sessions, and your gathered wisdom.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-jumbl-gold text-white px-8 py-4 rounded-2xl font-semibold hover:scale-[1.02] transition-all shadow-xl shadow-jumbl-gold/20">
-              Download for iOS
+            <button className="bg-jumbl-gold/10 text-jumbl-gold px-8 py-4 rounded-2xl font-semibold cursor-not-allowed border-2 border-jumbl-gold/20 flex flex-col items-start leading-none gap-1">
+              <span className="text-xs uppercase tracking-widest opacity-60">iOS App</span>
+              <span>Available Later</span>
             </button>
-            <button className="bg-jumbl-charcoal text-white px-8 py-4 rounded-2xl font-semibold hover:scale-[1.02] transition-all shadow-xl shadow-jumbl-charcoal/20">
-              Download for Android
-            </button>
-            <Link to="/#features" className="px-8 py-4 rounded-2xl font-semibold border-2 border-jumbl-charcoal/10 text-jumbl-charcoal hover:bg-jumbl-charcoal/5 transition-all">
+            <a 
+              href="https://play.google.com/store/apps/details?id=com.jumbl.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-jumbl-charcoal text-white px-8 py-4 rounded-2xl font-semibold hover:scale-[1.02] transition-all shadow-xl shadow-jumbl-charcoal/20 flex flex-col items-start leading-none gap-1"
+            >
+              <span className="text-xs uppercase tracking-widest opacity-60">Get it on</span>
+              <span>Google Play</span>
+            </a>
+            <Link to="/#features" className="px-8 py-4 rounded-2xl font-semibold border-2 border-jumbl-charcoal/10 text-jumbl-charcoal hover:bg-jumbl-charcoal/5 transition-all flex items-center">
               View Features
             </Link>
           </div>
