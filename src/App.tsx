@@ -41,22 +41,31 @@ function Layout({ children }: { children: React.ReactNode }) {
 
 
 function ScrollToHash() {
-  const { hash } = useLocation();
+  const { hash, pathname } = useLocation();
 
   useEffect(() => {
     if (hash) {
       const id = hash.replace('#', '');
-      const element = document.getElementById(id);
-      if (element) {
-        // Delay slightly to ensure content is rendered
-        setTimeout(() => {
+      
+      const scrollToElement = () => {
+        const element = document.getElementById(id);
+        if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
+          return true;
+        }
+        return false;
+      };
+
+      // Try immediately
+      if (!scrollToElement()) {
+        // If not found, retry after a short delay (for page transitions)
+        const timeoutId = setTimeout(scrollToElement, 300);
+        return () => clearTimeout(timeoutId);
       }
     } else {
       window.scrollTo(0, 0);
     }
-  }, [hash]);
+  }, [hash, pathname]);
 
   return null;
 }
