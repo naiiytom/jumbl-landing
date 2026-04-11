@@ -23,17 +23,17 @@ export default function Landing() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+      <section className="py-20 px-6 max-w-[90rem] mx-auto flex flex-col lg:flex-row items-center gap-20 lg:gap-32">
         <div className="flex-1 text-left">
-          <h1 className="text-6xl md:text-8xl font-playfair font-bold text-jumbl-charcoal mb-8 leading-[1.1] tracking-tight">
+          <h1 className="text-6xl md:text-8xl xl:text-9xl font-playfair font-bold text-jumbl-charcoal mb-8 leading-[1.1] tracking-tight">
             Read without <br/>
             distraction.
           </h1>
-          <p className="text-xl text-gray-600 mb-10 max-w-xl font-inter leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-xl font-inter leading-relaxed">
             Jumbl is an alabaster sanctuary for your library. We stripped away the social noise to focus on what matters: your reading, your sessions, and your gathered wisdom.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-jumbl-gold/10 text-jumbl-gold px-8 py-4 rounded-2xl font-semibold cursor-not-allowed border-2 border-jumbl-gold/20 flex flex-col items-start leading-none gap-1">
+            <button className="bg-jumbl-gold/10 text-jumbl-gold px-8 py-4 rounded-2xl font-semibold cursor-not-allowed border-2 border-jumbl-gold/20 flex flex-col items-start leading-none gap-1 shrink-0">
               <span className="text-xs uppercase tracking-widest opacity-60">iOS App</span>
               <span>Available Later</span>
             </button>
@@ -41,21 +41,21 @@ export default function Landing() {
               href="https://play.google.com/store/apps/details?id=com.jumbl.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-jumbl-charcoal text-white px-8 py-4 rounded-2xl font-semibold hover:scale-[1.02] transition-all shadow-xl shadow-jumbl-charcoal/20 flex flex-col items-start leading-none gap-1"
+              className="bg-jumbl-charcoal text-white px-8 py-4 rounded-2xl font-semibold hover:scale-[1.02] transition-all shadow-xl shadow-jumbl-charcoal/20 flex flex-col items-start leading-none gap-1 shrink-0"
             >
               <span className="text-xs uppercase tracking-widest opacity-60">Get it on</span>
               <span>Google Play</span>
             </a>
-            <Link to="/#features" className="px-8 py-4 rounded-2xl font-semibold border-2 border-jumbl-charcoal/10 text-jumbl-charcoal hover:bg-jumbl-charcoal/5 transition-all flex items-center">
+            <Link to="/#features" className="px-8 py-4 rounded-2xl font-semibold border-2 border-jumbl-charcoal/10 text-jumbl-charcoal hover:bg-jumbl-charcoal/5 transition-all flex items-center shrink-0">
               View Features
             </Link>
           </div>
         </div>
         
         {/* App Showcase */}
-        <div className="flex-1 relative w-full group">
-          <div className="absolute -inset-8 bg-gradient-to-tr from-jumbl-gold/20 to-transparent blur-3xl opacity-50 rounded-full" />
-          <div className="relative mx-auto w-full max-w-[420px] aspect-[9/19.5] bg-jumbl-charcoal rounded-[3rem] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.3)] border-[12px] border-jumbl-charcoal overflow-hidden transform lg:rotate-2">
+        <div className="flex-1 relative w-full group py-12 lg:py-0">
+          <div className="absolute -inset-16 bg-gradient-to-tr from-jumbl-gold/20 to-transparent blur-3xl opacity-50 rounded-full" />
+          <div className="relative mx-auto w-full max-w-[420px] lg:max-w-[500px] xl:max-w-[620px] 2xl:max-w-[740px] aspect-[9/19.5] bg-jumbl-charcoal rounded-[3.5rem] shadow-[0_45px_120px_-30px_rgba(0,0,0,0.3)] border-[14px] border-jumbl-charcoal overflow-hidden transform lg:rotate-2 transition-all duration-700">
             {SCREENSHOTS.map((src, index) => (
               <img 
                 key={src}
@@ -101,7 +101,7 @@ export default function Landing() {
       <section id="philosophy" className="py-32 px-6 max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-playfair font-bold text-jumbl-charcoal mb-8">Reading isn't a social sport.</h2>
         <p className="text-xl text-gray-500 italic font-inter leading-relaxed">
-          "The best tracker is the one that disappears. We built Jumbl to help you organize your library, not to steal your attention with feeds, ads, or gamification."
+          "The best tracker is the one that empowers. We built Jumbl to help you organize your library and deep-dive into your reading habits. Our features—like gold heatmaps and achievement milestones—are designed to celebrate your focus, not to distract you."
         </p>
       </section>
     </div>
