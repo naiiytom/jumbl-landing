@@ -89,13 +89,21 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-3">6. Your Rights</h2>
-          <p>You have the right to:</p>
-          <ul className="list-disc pl-6 mt-2">
-            <li>Access and update your personal information via the app settings.</li>
-            <li>Delete your account and all associated data permanently.</li>
-            <li>Manage your ad consent preferences (EEA/UK users).</li>
+          <h2 className="text-2xl font-semibold mb-3">6. Your Rights (GDPR & Global)</h2>
+          <p className="mb-4 text-gray-700">
+            If you are a resident of the European Economic Area (EEA), you have certain data protection rights under the General Data Protection Regulation (GDPR). JUMBL aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.
+          </p>
+          <ul className="list-disc pl-6 space-y-3 text-gray-700">
+            <li><strong>The right to access, update or delete</strong> the information we have on you. Whenever made possible, you can access, update or request deletion of your Personal Data directly within your account settings section.</li>
+            <li><strong>The right of rectification.</strong> You have the right to have your information rectified if that information is inaccurate or incomplete.</li>
+            <li><strong>The right to object.</strong> You have the right to object to our processing of your Personal Data.</li>
+            <li><strong>The right of restriction.</strong> You have the right to request that we restrict the processing of your personal information.</li>
+            <li><strong>The right to data portability.</strong> You have the right to be provided with a copy of the information we have on you in a structured, machine-readable and commonly used format.</li>
+            <li><strong>The right to withdraw consent.</strong> You also have the right to withdraw your consent at any time where JUMBL relied on your consent to process your personal information.</li>
           </ul>
+          <p className="mt-4 text-gray-700 text-sm italic">
+            Please note that we may ask you to verify your identity before responding to such requests. If you are in the EEA, you have the right to complain to a Data Protection Authority about our collection and use of your Personal Data.
+          </p>
         </section>
 
         <section>

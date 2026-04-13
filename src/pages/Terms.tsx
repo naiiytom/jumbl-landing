@@ -70,8 +70,13 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-3">9. Changes to Terms</h2>
-          <p>We reserve the right to modify these Terms at any time. We will notify users of any significant changes.</p>
+          <h2 className="text-2xl font-semibold mb-3">9. Governing Law</h2>
+          <p>These Terms shall be governed and construed in accordance with the laws of Thailand, without regard to its conflict of law provisions.</p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-3">10. Changes to Terms</h2>
+          <p>We reserve the right to modify these Terms at any time. We will notify users of any significant changes by posting the new Terms on this page.</p>
         </section>
 
         <section>
@@ -151,12 +156,17 @@ export default function Terms() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-mitr font-semibold mb-3 text-jumbl-charcoal">9. การเปลี่ยนแปลงข้อตกลง</h2>
-              <p>เราขอสงวนสิทธิ์ในการแก้ไขข้อตกลงเหล่านี้เมื่อใดก็ได้ เราจะแจ้งให้ผู้ใช้ทราบหากมีการเปลี่ยนแปลงที่สำคัญ</p>
+              <h2 className="text-2xl font-mitr font-semibold mb-3 text-jumbl-charcoal">9. กฎหมายที่บังคับใช้</h2>
+              <p>ข้อตกลงเหล่านี้จะถูกควบคุมและตีความตามกฎหมายของประเทศไทย โดยไม่คำนึงถึงบทบัญญัติว่าด้วยการขัดกันของกฎหมาย</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-mitr font-semibold mb-3 text-jumbl-charcoal">10. ติดต่อเรา</h2>
+              <h2 className="text-2xl font-mitr font-semibold mb-3 text-jumbl-charcoal">10. การเปลี่ยนแปลงข้อตกลง</h2>
+              <p>เราขอสงวนสิทธิ์ในการแก้ไขข้อตกลงเหล่านี้เมื่อใดก็ได้ เราจะแจ้งให้ผู้ใช้ทราบหากมีการเปลี่ยนแปลงที่สำคัญโดยการโพสต์ข้อตกลงใหม่ในหน้านี้</p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-mitr font-semibold mb-3 text-jumbl-charcoal">11. ติดต่อเรา</h2>
               <p>หากคุณมีคำถามใดๆ เกี่ยวกับข้อตกลงเหล่านี้ โปรดติดต่อเราที่ <a href="mailto:support@unjumbl.ing" className="text-jumbl-gold hover:underline">support@unjumbl.ing</a></p>
             </section>
           </div>
