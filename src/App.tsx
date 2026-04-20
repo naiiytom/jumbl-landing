@@ -5,6 +5,7 @@ import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
 import DataProtection from './pages/DataProtection'
 import Cookies from './pages/Cookies'
+import GetApp from './pages/GetApp'
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -81,6 +82,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/data-protection" element={<DataProtection />} />
           <Route path="/cookies" element={<Cookies />} />
+          <Route path="/get-app" element={<GetApp />} />
         </Routes>
       </Layout>
     </BrowserRouter>
