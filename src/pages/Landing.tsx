@@ -38,7 +38,7 @@ export default function Landing() {
               <span>Available Later</span>
             </button>
             <a 
-              href="https://play.google.com/store/apps/details?id=com.jumbl.app"
+              href="https://play.google.com/store/apps/details?id=com.jumbl.app&utm_source=unjumbl_landing&utm_medium=hero_button&utm_campaign=app_install"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-jumbl-charcoal text-white px-8 py-4 rounded-2xl font-semibold hover:scale-[1.02] transition-all shadow-xl shadow-jumbl-charcoal/20 flex flex-col items-start leading-none gap-1 shrink-0"
