@@ -1,25 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-
-const SCREENSHOTS = [
-  '/screenshots/mockup-1.jpg',
-  '/screenshots/mockup-2.jpg',
-  '/screenshots/mockup-3.jpg',
-  '/screenshots/mockup-4.jpg',
-  '/screenshots/mockup-5.jpg',
-  '/screenshots/mockup-6.jpg',
-];
+import ScreenShowcase from '../components/ScreenShowcase';
 
 export default function Landing() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex(prev => (prev + 1) % SCREENSHOTS.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -53,19 +35,7 @@ export default function Landing() {
         </div>
         
         {/* App Showcase */}
-        <div className="flex-1 relative w-full group py-12 lg:py-0">
-          <div className="absolute -inset-16 bg-gradient-to-tr from-jumbl-gold/20 to-transparent blur-3xl opacity-50 rounded-full" />
-          <div className="relative mx-auto w-full max-w-[420px] lg:max-w-[500px] xl:max-w-[620px] 2xl:max-w-[740px] aspect-[9/19.5] bg-jumbl-charcoal rounded-[3.5rem] shadow-[0_45px_120px_-30px_rgba(0,0,0,0.3)] border-[14px] border-jumbl-charcoal overflow-hidden transform lg:rotate-2 transition-all duration-700">
-            {SCREENSHOTS.map((src, index) => (
-              <img 
-                key={src}
-                src={src} 
-                alt={`Jumbl UI Mockup ${index + 1}`} 
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
-              />
-            ))}
-          </div>
-        </div>
+        <ScreenShowcase />
       </section>
 
       {/* Features Detail */}

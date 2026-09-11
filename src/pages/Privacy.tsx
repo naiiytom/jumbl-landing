@@ -33,8 +33,8 @@ export default function Privacy() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-medium mb-2">1.3 Device and Advertising Identifiers</h3>
-              <p>We may collect information about the device you use, such as model, OS version, and unique identifiers (e.g., IDFA for iOS or AAID for Android) used for advertising and analytics.</p>
+              <h3 className="text-xl font-medium mb-2">1.3 Device Information</h3>
+              <p>We may collect information about the device you use, such as model and OS version used for analytics.</p>
             </div>
           </div>
         </section>
@@ -46,20 +46,14 @@ export default function Privacy() {
             <li>Provide and maintain the app's features.</li>
             <li>Personalize your experience and reading insights.</li>
             <li>Synchronize your data across devices via Firebase.</li>
-            <li>Serve personalized or non-personalized advertisements via Google AdMob.</li>
             <li>Improve our services and develop new features.</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-3">3. Advertising and Analytics</h2>
+          <h2 className="text-2xl font-semibold mb-3">3. Analytics</h2>
           <div className="space-y-4">
             <div>
-              <h3 className="text-xl font-medium mb-2">3.1 Google AdMob</h3>
-              <p>We use Google AdMob to serve ads in the free version of the App. Google and its partners may use cookies or mobile identifiers to serve ads based on your visits to this or other apps. Users in the EEA and UK will be presented with a consent dialog to manage their preferences.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-medium mb-2">3.2 Firebase Analytics</h3>
               <p>We use Firebase Analytics to understand app usage and improve user experience. This data is aggregated and does not identify individual users directly.</p>
             </div>
           </div>
@@ -83,7 +77,7 @@ export default function Privacy() {
           <h2 className="text-2xl font-semibold mb-3">5. Data Sharing</h2>
           <p>We do not sell your personal information. We share data only with:</p>
           <ul className="list-disc pl-6 mt-2">
-            <li><strong>Google Services:</strong> Firebase (Storage/Auth) and AdMob (Advertising).</li>
+            <li><strong>Google Services:</strong> Firebase (Storage/Auth/Analytics).</li>
             <li><strong>Legal Compliance:</strong> If required by law or to protect our rights.</li>
           </ul>
         </section>
@@ -146,8 +140,8 @@ export default function Privacy() {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-xl font-mitr font-medium mb-2 text-jumbl-charcoal">1.3 ข้อมูลอุปกรณ์และตัวระบุโฆษณา</h3>
-                  <p>เราอาจเก็บรวบรวมข้อมูลเกี่ยวกับอุปกรณ์ที่คุณใช้ เช่น รุ่นอุปกรณ์, เวอร์ชันของระบบปฏิบัติการ และตัวระบุเฉพาะ (เช่น IDFA สำหรับ iOS หรือ AAID สำหรับ Android) เพื่อใช้ในการวิเคราะห์และโฆษณา</p>
+                  <h3 className="text-xl font-mitr font-medium mb-2 text-jumbl-charcoal">1.3 ข้อมูลอุปกรณ์</h3>
+                  <p>เราอาจเก็บรวบรวมข้อมูลเกี่ยวกับอุปกรณ์ที่คุณใช้ เช่น รุ่นอุปกรณ์ และเวอร์ชันของระบบปฏิบัติการ เพื่อใช้ในการวิเคราะห์</p>
                 </div>
               </div>
             </section>
@@ -159,20 +153,14 @@ export default function Privacy() {
                 <li>ให้บริการและดูแลรักษาฟีเจอร์ต่างๆ ของแอป</li>
                 <li>ปรับแต่งประสบการณ์และข้อมูลเชิงลึกการอ่านของคุณ</li>
                 <li>ซิงค์ข้อมูลของคุณระหว่างอุปกรณ์ผ่าน Firebase</li>
-                <li>แสดงโฆษณาที่ปรับให้เหมาะกับคุณหรือไม่ปรับแต่งผ่าน Google AdMob</li>
                 <li>ปรับปรุงบริการและพัฒนาฟีเจอร์ใหม่ๆ</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-mitr font-semibold mb-3 text-jumbl-charcoal">3. การโฆษณาและการวิเคราะห์</h2>
+              <h2 className="text-2xl font-mitr font-semibold mb-3 text-jumbl-charcoal">3. การวิเคราะห์</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-xl font-mitr font-medium mb-2 text-jumbl-charcoal">3.1 Google AdMob</h3>
-                  <p>เราใช้ Google AdMob เพื่อแสดงโฆษณาในเวอร์ชันฟรีของแอป Google และพันธมิตรอาจใช้คุกกี้หรือตัวระบุบนมือถือเพื่อแสดงโฆษณาตามการใช้งานแอปนี้หรือแอปอื่นๆ สำหรับผู้ใช้ใน EEA และสหราชอาณาจักร จะมีการแสดงกล่องข้อความขอความยินยอมเพื่อจัดการการตั้งค่าของคุณ</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-mitr font-medium mb-2 text-jumbl-charcoal">3.2 Firebase Analytics</h3>
                   <p>เราใช้ Firebase Analytics เพื่อทำความเข้าใจการใช้งานแอปและปรับปรุงประสบการณ์ผู้ใช้ ข้อมูลนี้เป็นข้อมูลแบบสรุปรวมและไม่ระบุตัวตนผู้ใช้แต่ละรายโดยตรง</p>
                 </div>
               </div>
@@ -196,7 +184,7 @@ export default function Privacy() {
               <h2 className="text-2xl font-mitr font-semibold mb-3 text-jumbl-charcoal">5. การแบ่งปันข้อมูล</h2>
               <p>เราไม่ขายข้อมูลส่วนบุคคลของคุณ เราจะแบ่งปันข้อมูลกับ:</p>
               <ul className="list-disc pl-6 mt-2">
-                <li><strong>บริการของ Google:</strong> Firebase (การจัดเก็บ/การยืนยันตัวตน) และ AdMob (การโฆษณา)</li>
+                <li><strong>บริการของ Google:</strong> Firebase (การจัดเก็บ/การยืนยันตัวตน/การวิเคราะห์)</li>
                 <li><strong>การปฏิบัติตามกฎหมาย:</strong> หากมีความจำเป็นตามกฎหมายหรือเพื่อปกป้องสิทธิ์ของเรา</li>
               </ul>
             </section>
@@ -207,7 +195,6 @@ export default function Privacy() {
               <ul className="list-disc pl-6 mt-2">
                 <li>เข้าถึงและอัปเดตข้อมูลส่วนบุคคลของคุณผ่านการตั้งค่าในแอป</li>
                 <li>ลบบัญชีและข้อมูลที่เกี่ยวข้องทั้งหมดอย่างถาวร</li>
-                <li>จัดการการตั้งค่าความยินยอมเกี่ยวกับโฆษณา (สำหรับผู้ใช้ใน EEA/สหราชอาณาจักร)</li>
               </ul>
             </section>
 
