@@ -5,6 +5,7 @@ const PLAY_STORE_URL =
   '&utm_source=unjumbl_landing&utm_medium=get_app_redirect&utm_campaign=app_install';
 
 function detectPlatform(): 'ios' | 'android' | 'other' {
+  if (typeof navigator === 'undefined') return 'other';
   const ua = navigator.userAgent;
   if (/iPad|iPhone|iPod/.test(ua)) return 'ios';
   if (/Android/.test(ua)) return 'android';
@@ -35,15 +36,13 @@ function IOSComingSoonButton() {
 }
 
 export default function GetApp() {
-  const [platform, setPlatform] = useState<'ios' | 'android' | 'other' | null>(null);
+  const [platform] = useState<'ios' | 'android' | 'other'>(() => detectPlatform());
 
   useEffect(() => {
-    const detected = detectPlatform();
-    setPlatform(detected);
-    if (detected === 'android') {
+    if (platform === 'android') {
       window.location.href = PLAY_STORE_URL;
     }
-  }, []);
+  }, [platform]);
 
   if (platform === 'android') {
     return (
