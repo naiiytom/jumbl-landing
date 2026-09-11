@@ -7,7 +7,7 @@ export default function Cookies() {
         <section>
           <h2 className="text-2xl font-semibold mb-3">1. Understanding Cookies</h2>
           <p className="mb-4">
-            Cookies and similar technologies (like mobile advertising identifiers) are small pieces of data used to store information on web browsers or mobile devices. They help provide a better, faster, and safer experience.
+            Cookies and similar technologies are small pieces of data used to store information on web browsers or mobile devices. They help provide a better, faster, and safer experience.
           </p>
         </section>
 
@@ -19,16 +19,9 @@ export default function Cookies() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-3">3. Advertising Identifiers</h2>
+          <h2 className="text-2xl font-semibold mb-3">3. Managing Your Preferences</h2>
           <p className="mb-4">
-            In our mobile application, we use Google AdMob which may use mobile identifiers (e.g., Apple's IDFA or Google's Advertising ID) to serve personalized or non-personalized ads. We respect your device settings and consent preferences (such as "Limit Ad Tracking").
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-3">4. Managing Your Preferences</h2>
-          <p className="mb-4">
-            You can manage your cookie and identifier preferences through your browser settings or your mobile device's privacy settings. Users in the EEA and UK can also manage their ad consent directly through the App's consent dialog.
+            You can manage your cookie preferences through your browser settings or your mobile device's privacy settings.
           </p>
         </section>
 
@@ -41,7 +34,7 @@ export default function Cookies() {
             <section>
               <h2 className="text-2xl font-mitr font-semibold mb-3 text-jumbl-charcoal">1. ความเข้าใจเกี่ยวกับคุกกี้</h2>
               <p className="mb-4 text-jumbl-charcoal">
-                คุกกี้และเทคโนโลยีที่คล้ายคลึงกัน (เช่น ตัวระบุโฆษณาบนมือถือ) คือข้อมูลขนาดเล็กที่ใช้เพื่อจัดเก็บข้อมูลบนเว็บเบราว์เซอร์หรืออุปกรณ์มือถือ สิ่งเหล่านี้ช่วยให้ได้รับประสบการณ์การใช้งานที่ดีขึ้น รวดเร็วขึ้น และปลอดภัยขึ้น
+                คุกกี้และเทคโนโลยีที่คล้ายคลึงกัน คือข้อมูลขนาดเล็กที่ใช้เพื่อจัดเก็บข้อมูลบนเว็บเบราว์เซอร์หรืออุปกรณ์มือถือ สิ่งเหล่านี้ช่วยให้ได้รับประสบการณ์การใช้งานที่ดีขึ้น รวดเร็วขึ้น และปลอดภัยขึ้น
               </p>
             </section>
 
@@ -53,16 +46,9 @@ export default function Cookies() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-mitr font-semibold mb-3 text-jumbl-charcoal">3. ตัวระบุโฆษณาบนมือถือ</h2>
+              <h2 className="text-2xl font-mitr font-semibold mb-3 text-jumbl-charcoal">3. การจัดการความต้องการของคุณ</h2>
               <p className="mb-4 text-jumbl-charcoal">
-                ในแอปพลิเคชันมือถือของเรา เราใช้ Google AdMob ซึ่งอาจใช้ตัวระบุบนมือถือ (เช่น IDFA ของ Apple หรือ Advertising ID ของ Google) เพื่อแสดงโฆษณาที่ปรับให้เหมาะกับคุณหรือไม่ปรับแต่ง เราเคารพการตั้งค่าอุปกรณ์และความต้องการความยินยอมของคุณ (เช่น การตั้งค่า "จำกัดการติดตามโฆษณา")
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-mitr font-semibold mb-3 text-jumbl-charcoal">4. การจัดการความต้องการของคุณ</h2>
-              <p className="mb-4 text-jumbl-charcoal">
-                คุณสามารถจัดการความต้องการเกี่ยวกับคุกกี้และตัวระบุของคุณได้ผ่านการตั้งค่าเบราว์เซอร์หรือการตั้งค่าความเป็นส่วนตัวของอุปกรณ์มือถือของคุณ ผู้ใช้ใน EEA และสหราชอาณาจักรสามารถจัดการความยินยอมเกี่ยวกับโฆษณาได้โดยตรงผ่านกล่องโต้ตอบขอความยินยอมในแอป
+                คุณสามารถจัดการความต้องการเกี่ยวกับคุกกี้ของคุณได้ผ่านการตั้งค่าเบราว์เซอร์หรือการตั้งค่าความเป็นส่วนตัวของอุปกรณ์มือถือของคุณ
               </p>
             </section>
           </div>
